@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    float vize1, vize2, devamlılık, proje, toplamPuan;
+    printf("Vize 1 puanını giriniz: ");
+    scanf("%f", &vize1);
+    printf("Vize 2 puanını giriniz: ");
+    scanf("%f", &vize2);
+    printf("Devamlılık puanını giriniz: ");
+    scanf("%f", &devamlılık);
+    printf("Proje puanını giriniz: ");
+    scanf("%f", &proje);
+    toplamPuan = vize1 + vize2 + devamlılık + proje;
+    if (toplamPuan > 51) {
+        printf("Tebrikler! Dönemi başarıyla geçtiniz.\n");
+    } else {
+        printf("Maalesef başarısız oldunuz.\n");
+    }
+    return 0;
+    }
